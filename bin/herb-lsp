@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+# The ADDITIONAL_PATHS variable will have the trailing separator if it's not
+# an empty string.
+export PATH="$ADDITIONAL_PATHS$PATH"
+
+herb-language-server --stdio
